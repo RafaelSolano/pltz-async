@@ -19,8 +19,11 @@ const countCows = new Promise(function (resolve, rejected) {
   }
 });
 
+//then lo usamos para hacer solicitudes encadenada
+//re\jecte capturado lcon el catch
+//Finally para dar com finalizada la promesa
 countCows.then((result) => {
   console.log(result);
 }).catch((error) => {
   console.error(error);
-})
+}).finally(() => console.log("finaly"));
