@@ -8,8 +8,6 @@ async function fetchData(urlApi) {
 
 //SEgunda forma de Usar Async
 const anotherFunction = async (urlApi) => {
-  
-  //Solicitudes
   try {
     const products = await fetchData(`${urlApi}/products`);
     const product = await fetchData(`${urlApi}/products/${products[0].id}`)
